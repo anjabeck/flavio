@@ -55,7 +55,10 @@ class TestLambdabLambdall(unittest.TestCase):
         # self.assertEqual(set(ta_low.values()), {0})
 
     def test_lambdalambdall_mumu_angular_1to6(self):
-        # compare to table 2 of arXiv:1710.00746
+        # Compare to table 2 of arXiv:1710.00746.
+        # These predictions were obtained with eos in 2017 and are slightly
+        # different from the ones obtained with flavio, likely due to
+        # different input parameters. The tolerances are set accordingly.
         ass_sm(self, '<K1ss>(Lambdab->Lambdamumu)', 1, 6,  0.459, 0.003)
         ass_sm(self, '<K1cc>(Lambdab->Lambdamumu)', 1, 6,  0.081, 0.007)
         ass_sm(self, '<K1c>(Lambdab->Lambdamumu)',  1, 6, -0.005, 0.017)
@@ -92,7 +95,10 @@ class TestLambdabLambdall(unittest.TestCase):
         ass_sm(self, '<K34>(Lambdab->Lambdamumu)',  1, 6,  0.000, 0.001)
 
     def test_lambdalambdall_mumu_angular_15to20(self):
-        # compare to table 3 of arXiv:1710.00746
+        # Compare to table 3 of arXiv:1710.00746.
+        # These predictions were obtained with eos in 2017 and are slightly
+        # different from the ones obtained with flavio, likely due to
+        # different input parameters. The tolerances are set accordingly.
         ass_sm(self, '<K1ss>(Lambdab->Lambdamumu)', 15, 20,  0.351, 0.002)
         ass_sm(self, '<K1cc>(Lambdab->Lambdamumu)', 15, 20,  0.298, 0.003)
         ass_sm(self, '<K1c>(Lambdab->Lambdamumu)',  15, 20, -0.236, 0.004)
